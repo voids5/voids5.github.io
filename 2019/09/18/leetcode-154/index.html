@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和          1.如果n==1;返回maxx即可          2.如果n&amp;gt;1;如果sum&amp;gt;=0;比较maxx与sum*(k-2)+lmax+rmax.          如果sum&amp;lt;0;比较maxx与lmax+rmax.">
+  <meta name="description" content="反转每对括号间的子串题目链接：https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses/解题思路：未遇到右括号前就压栈，遇到右括号后就反转最近的左括号与右括号之间的元素，最后需要反转输出        反转括号间的元素可以用栈来操作，先出栈再入栈。">
 <meta name="keywords" content="杂记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="K 次串联后最大子数组之和(LeetCode-5191)">
-<meta property="og:url" content="http://yoursite.com/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/index.html">
+<meta property="og:title" content="leetcode-154">
+<meta property="og:url" content="http://yoursite.com/2019/09/18/leetcode-154/index.html">
 <meta property="og:site_name" content="惊鸿">
-<meta property="og:description" content="解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和          1.如果n==1;返回maxx即可          2.如果n&amp;gt;1;如果sum&amp;gt;=0;比较maxx与sum*(k-2)+lmax+rmax.          如果sum&amp;lt;0;比较maxx与lmax+rmax.">
+<meta property="og:description" content="反转每对括号间的子串题目链接：https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses/解题思路：未遇到右括号前就压栈，遇到右括号后就反转最近的左括号与右括号之间的元素，最后需要反转输出        反转括号间的元素可以用栈来操作，先出栈再入栈。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-18T03:56:36.880Z">
+<meta property="og:updated_time" content="2019-09-18T09:09:00.738Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="K 次串联后最大子数组之和(LeetCode-5191)">
-<meta name="twitter:description" content="解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和          1.如果n==1;返回maxx即可          2.如果n&amp;gt;1;如果sum&amp;gt;=0;比较maxx与sum*(k-2)+lmax+rmax.          如果sum&amp;lt;0;比较maxx与lmax+rmax.">
-  <link rel="canonical" href="http://yoursite.com/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/">
+<meta name="twitter:title" content="leetcode-154">
+<meta name="twitter:description" content="反转每对括号间的子串题目链接：https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses/解题思路：未遇到右括号前就压栈，遇到右括号后就反转最近的左括号与右括号之间的元素，最后需要反转输出        反转括号间的元素可以用栈来操作，先出栈再入栈。">
+  <link rel="canonical" href="http://yoursite.com/2019/09/18/leetcode-154/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>K 次串联后最大子数组之和(LeetCode-5191) | 惊鸿</title>
+  <title>leetcode-154 | 惊鸿</title>
   
 
 
@@ -256,7 +256,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/18/leetcode-154/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="voids">
@@ -268,7 +268,7 @@
       <meta itemprop="name" content="惊鸿">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">K 次串联后最大子数组之和(LeetCode-5191)
+        <h1 class="post-title" itemprop="name headline">leetcode-154
 
           
         </h1>
@@ -284,7 +284,7 @@
                 
               
 
-              <time title="创建时间：2019-09-18 09:40:38 / 修改时间：11:56:36" itemprop="dateCreated datePublished" datetime="2019-09-18T09:40:38+08:00">2019-09-18</time>
+              <time title="创建时间：2019-09-18 09:40:38 / 修改时间：17:09:00" itemprop="dateCreated datePublished" datetime="2019-09-18T09:40:38+08:00">2019-09-18</time>
             </span>
           
             
@@ -306,7 +306,7 @@
           
 
           
-            <span id="/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/" class="post-meta-item leancloud_visitors" data-flag-title="K 次串联后最大子数组之和(LeetCode-5191)" title="阅读次数">
+            <span id="/2019/09/18/leetcode-154/" class="post-meta-item leancloud_visitors" data-flag-title="leetcode-154" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -324,7 +324,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/2019/09/18/leetcode-154/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/09/18/leetcode-154/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -338,7 +338,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和<br>          1.如果n==1;返回maxx即可<br>          2.如果n&gt;1;如果sum&gt;=0;比较maxx与sum*(k-2)+lmax+rmax.<br>          如果sum&lt;0;比较maxx与lmax+rmax.</p><a id="more"></a>
+        <p>反转每对括号间的子串</p><p>题目链接：<a href="https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/reverse-substrings-between-each-pair-of-parentheses/</a></p><p>解题思路：未遇到右括号前就压栈，遇到右括号后就反转最近的左括号与右括号之间的元素，最后需要反转输出<br>        反转括号间的元素可以用栈来操作，先出栈再入栈。</p><a id="more"></a>
+
+
+<p>Code:</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line"><span class="symbol">public:</span></span><br><span class="line">    string reverseParentheses(string s) &#123;</span><br><span class="line">        string ss<span class="comment">;</span></span><br><span class="line">        ss=s<span class="comment">;</span></span><br><span class="line">        stack&lt;char&gt;<span class="built_in">s1</span><span class="comment">;</span></span><br><span class="line">        int len = ss.length()<span class="comment">;</span></span><br><span class="line">        for(int i=<span class="number">0</span><span class="comment">;i&lt;len;i++)&#123;</span></span><br><span class="line">            if(ss[i]==<span class="string">')'</span>)&#123;</span><br><span class="line">                string ch=<span class="string">""</span><span class="comment">;</span></span><br><span class="line">                while(<span class="built_in">s1</span>.top()!=<span class="string">'('</span>)&#123;</span><br><span class="line">                    ch+=<span class="built_in">s1</span>.top()<span class="comment">;</span></span><br><span class="line">                    <span class="built_in">s1</span>.pop()<span class="comment">;</span></span><br><span class="line">                &#125;</span><br><span class="line">                <span class="built_in">s1</span>.pop()<span class="comment">;</span></span><br><span class="line"></span><br><span class="line">                for(int <span class="keyword">j=0;j&lt;ch.length();j++)&#123;</span></span><br><span class="line"><span class="keyword"> </span>                   <span class="built_in">s1</span>.push(ch[<span class="keyword">j]);</span></span><br><span class="line"><span class="keyword"> </span>               &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            else &#123;</span><br><span class="line">                <span class="built_in">s1</span>.push(ss[i])<span class="comment">;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        string tt=<span class="string">""</span><span class="comment">;</span></span><br><span class="line">        while(!<span class="built_in">s1</span>.empty())&#123;</span><br><span class="line">            tt+=<span class="built_in">s1</span>.top()<span class="comment">;</span></span><br><span class="line">            <span class="built_in">s1</span>.pop()<span class="comment">;</span></span><br><span class="line">        &#125;</span><br><span class="line">        reverse(tt.<span class="keyword">begin(),tt.end());</span></span><br><span class="line"><span class="keyword"> </span>       return tt<span class="comment">;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<p>K次串联后最大子数组之和  </p>
+<p>题目链接：<a href="https://leetcode-cn.com/problems/k-concatenation-maximum-sum/" target="_blank" rel="noopener">https://leetcode-cn.com/problems/k-concatenation-maximum-sum/</a></p>
+<p>解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和<br>          1.如果n==1;返回maxx即可<br>          2.如果n&gt;1;如果sum&gt;=0;比较maxx与sum*(k-2)+lmax+rmax.<br>          如果sum&lt;0;比较maxx与lmax+rmax.</p>
 <p>Code:</p>
 <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> kConcatenationMaxSum(vector&lt;<span class="keyword">int</span>&gt;&amp; arr, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        typedef <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">mod</span>=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">        ll lmax=<span class="number">0</span>,rmax=<span class="number">0</span>;</span><br><span class="line">        ll cur=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> n=arr.size();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            cur+=arr[i];</span><br><span class="line">            lmax=max(lmax,cur);</span><br><span class="line">        &#125;</span><br><span class="line">        cur=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=n<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">            cur+=arr[i];</span><br><span class="line">            rmax=max(rmax,cur);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//最大连续和</span></span><br><span class="line">        ll maxx=<span class="number">0</span>,<span class="keyword">sum</span>=<span class="number">0</span>;</span><br><span class="line">        cur=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="keyword">sum</span>+=arr[i];</span><br><span class="line">            cur+=arr[i];</span><br><span class="line">            <span class="keyword">if</span>(cur&lt;<span class="number">0</span>) cur=<span class="number">0</span>;</span><br><span class="line">            maxx=max(maxx,cur);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(k==<span class="number">1</span>) <span class="keyword">return</span> maxx%<span class="keyword">mod</span>;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="comment">//sum&gt;=0</span></span><br><span class="line">            maxx=max(maxx,lmax+rmax+(k<span class="number">-2</span>)*<span class="keyword">sum</span>);</span><br><span class="line">            <span class="comment">//sum&lt;0</span></span><br><span class="line">            maxx=max(maxx,lmax+rmax);</span><br><span class="line">            <span class="keyword">return</span> maxx%<span class="keyword">mod</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
     </div>
