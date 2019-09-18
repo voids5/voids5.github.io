@@ -55,17 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="岁月漫长，值得等待">
-<meta property="og:type" content="website">
-<meta property="og:title" content="惊鸿">
-<meta property="og:url" content="http://yoursite.com/tags/唯一分解定理/index.html">
+  <meta name="description" content="解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和          1.如果n==1;返回maxx即可          2.如果n&amp;gt;1;如果sum&amp;gt;=0;比较maxx与sum*(k-2)+lmax+rmax.          如果sum&amp;lt;0;比较maxx与lmax+rmax.">
+<meta name="keywords" content="C++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="K 次串联后最大子数组之和(LeetCode-5191)">
+<meta property="og:url" content="http://yoursite.com/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/index.html">
 <meta property="og:site_name" content="惊鸿">
-<meta property="og:description" content="岁月漫长，值得等待">
+<meta property="og:description" content="解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和          1.如果n==1;返回maxx即可          2.如果n&amp;gt;1;如果sum&amp;gt;=0;比较maxx与sum*(k-2)+lmax+rmax.          如果sum&amp;lt;0;比较maxx与lmax+rmax.">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-18T01:52:06.367Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="惊鸿">
-<meta name="twitter:description" content="岁月漫长，值得等待">
-  <link rel="canonical" href="http://yoursite.com/tags/唯一分解定理/">
+<meta name="twitter:title" content="K 次串联后最大子数组之和(LeetCode-5191)">
+<meta name="twitter:description" content="解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和          1.如果n==1;返回maxx即可          2.如果n&amp;gt;1;如果sum&amp;gt;=0;比较maxx与sum*(k-2)+lmax+rmax.          如果sum&amp;lt;0;比较maxx与lmax+rmax.">
+  <link rel="canonical" href="http://yoursite.com/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/">
 
 
 <script id="page-configurations">
@@ -73,13 +75,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>标签: 唯一分解定理 | 惊鸿</title>
+  <title>K 次串联后最大子数组之和(LeetCode-5191) | 惊鸿</title>
   
 
 
@@ -245,88 +247,153 @@
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block tag">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">唯一分解定理<small>标签</small>
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="voids">
+      <meta itemprop="description" content="岁月漫长，值得等待">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="惊鸿">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">K 次串联后最大子数组之和(LeetCode-5191)
+
+          
         </h1>
-      </div>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-18 09:40:38 / 修改时间：09:52:06" itemprop="dateCreated datePublished" datetime="2019-09-18T09:40:38+08:00">2019-09-18</time>
+            </span>
+          
+            
+
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/杂记/" itemprop="url" rel="index"><span itemprop="name">杂记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            <span id="/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/" class="post-meta-item leancloud_visitors" data-flag-title="K 次串联后最大子数组之和(LeetCode-5191)" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/09/18/K-次串联后最大子数组之和-LeetCode-5191/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+        <p>解题思路：lmax表示单个数组的最大前缀和，rmax表示单个数组的最大后缀和，maxx表示单个数组最大连续和,sum表示单个数组总和<br>          1.如果n==1;返回maxx即可<br>          2.如果n&gt;1;如果sum&gt;=0;比较maxx与sum*(k-2)+lmax+rmax.<br>          如果sum&lt;0;比较maxx与lmax+rmax.</p><a id="more"></a>
+<p>Code:</p>
+<figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> kConcatenationMaxSum(vector&lt;<span class="keyword">int</span>&gt;&amp; arr, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        typedef <span class="keyword">long</span> <span class="keyword">long</span> ll;</span><br><span class="line">        <span class="keyword">long</span> <span class="keyword">long</span> <span class="keyword">mod</span>=<span class="number">1e9</span>+<span class="number">7</span>;</span><br><span class="line">        ll lmax=<span class="number">0</span>,rmax=<span class="number">0</span>;</span><br><span class="line">        ll cur=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> n=arr.size();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            cur+=arr[i];</span><br><span class="line">            lmax=max(lmax,cur);</span><br><span class="line">        &#125;</span><br><span class="line">        cur=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=n<span class="number">-1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">            cur+=arr[i];</span><br><span class="line">            rmax=max(rmax,cur);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//最大连续和</span></span><br><span class="line">        ll maxx=<span class="number">0</span>,<span class="keyword">sum</span>=<span class="number">0</span>;</span><br><span class="line">        cur=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="keyword">sum</span>+=arr[i];</span><br><span class="line">            cur+=arr[i];</span><br><span class="line">            <span class="keyword">if</span>(cur&lt;<span class="number">0</span>) cur=<span class="number">0</span>;</span><br><span class="line">            maxx=max(maxx,cur);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(k==<span class="number">1</span>) <span class="keyword">return</span> maxx%<span class="keyword">mod</span>;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="comment">//sum&gt;=0</span></span><br><span class="line">            maxx=max(maxx,lmax+rmax+(k<span class="number">-2</span>)*<span class="keyword">sum</span>);</span><br><span class="line">            <span class="comment">//sum&lt;0</span></span><br><span class="line">            maxx=max(maxx,lmax+rmax);</span><br><span class="line">            <span class="keyword">return</span> maxx%<span class="keyword">mod</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+    </div>
 
-  
-  
-
-  
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
+    
+    
         
-          <a class="post-title-link" href="/2019/09/14/Minimum-Sum-LCM/" itemprop="url">
-            <span itemprop="name">Minimum Sum LCM</span>
-          </a>
+      
+
+      <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/C/" rel="tag"># C++</a>
+            
+          </div>
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-14T11:02:34+08:00"
-              content="2019-09-14">
-          09-14
-        </time>
-      </div>
+        
 
-    </header>
-  </article>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/09/14/Minimum-Sum-LCM/" rel="next" title="Minimum Sum LCM">
+                  <i class="fa fa-chevron-left"></i> Minimum Sum LCM
+                </a>
+              
+            </div>
 
+            <span class="post-nav-divider"></span>
 
-
-    </div>
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
         </div>
           
@@ -341,6 +408,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
